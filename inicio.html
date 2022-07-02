@@ -1,12 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
-</head>
-<body>
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <style>
+      body {
+        padding-top:100px;
+      }
+    </style>
+    <title>Portafolio Web</title>
+  </head>
+  <body>
+    <!-- Barra de Navegación -->
+    <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark border-3 border-bottom border-danger fixed-top">
+      <a href="estilo.css" class="navbar-brand">
+        <img class="rounded-pill" src="zona.jpg" alt="Foto del creador" style="width:70px"ALIGN="LEFT" hspace=10 vspace=-10>
+         Anderson Arroba <br> {Estudiante}
+      </a>
+      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
+        <span class="navbar-toggler-icon"> </span>
+      </button>
+      <div id="Menu" class="collapse navbar-collapse justify-content-between">
+        <a></a>
+        <ul class="navbar-nav ms-100">
+          <li class="nav-item"><a class="nav-link" href="#">PERFIL</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">EXPERIENCIA</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">HABILIDADES</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="menuDesl" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              CURSOS
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <li><a class="dropdown-item" href="#">Html5</a></li>
+              <li><a class="dropdown-item" href="#">Css3</a></li>
+              <li><a class="dropdown-item" href="#">jS</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- PERFIL -->
+    <div class="container">
+      <div class="row">
+        <dt class="col-sm-4">
+          <h1>
+            Hola, soy <br> Anderson Arroba
+          </h1>
+          <p>
+            Soy un estudiante de la Universidad Estatal de Milagro "UNEMI", sigo la carrera de Ingenieria de Software, actualmente curso el
+            Cuarto Nivel, aspiro ser un desarrollador de programas y páginas web. La carrera que estudio se trata de diseñar aplicaciones
+            de Software, mi futura responsabilidad es trabajar con un equipo de analistas de control de calidad, gerentes de productos y
+            desarrolladores de software para verificar la calidad del software e identificar cualquier error.
+            <br>
+            <button type="button" class="btn btn-dark">Descargar CV</button>
+          </p>
+        </dt>
+      <div class="col-sm-7">
+          <img src="zona.jpg" class="rounded float-end" alt="Foto del creador" width="450" height="450" ALIGN="LEFT" hspace=10 vspace=10>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- EXPERIENCIA -->
+    <div class="container">
+        <figure class="text-center">
+          <blockquote>
+            <h2>EXPERIENCIA</h2>
+          </blockquote>
+          <div class="col-4"></div>
+        </figure>
+      <br>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <!-- ESPACIO -->
+        </div>
+        <div class="col-5">
+          <figure>
+            <blockquote class="blockquote">
+              <h4>
+                <cite title="Source Title">2021-2022</cite>
+              </h4>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Tercer Nivel
+            </figcaption>
+            <dt class="col-sm-13">
+              <p>
+                En mi ultimo semestre culminado, pusimos en practica todos los conocimiento antes aprendido y Python fue el lenguajes de programación
+                que me enseñaron por ser un lenguaje sencillo de leer y escribir porque es muy similar al lenguaje humano. Además, es de código 
+                abierto y, por lo tanto, un lenguaje multiplataforma, lo que le permite desarrollar software sin restricciones, y actualmente
+                es el mas utilzado por los programadores profesionales.<br>
+              </p>
+            </dt>
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <h4>
+                <cite title="Source Title">2020-2021</cite>
+              </h4>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Segundo Nivel
+            </figcaption>
+            <dt class="col-sm-13">
+              <p>
+                En este semestre, me dieron conocimientos de espacios al momento de programar o hacer alguna operación matemática con las
+                diversas materias: Álgebra lineal, física, ingeniería de requerimientos de software, técnicas de programación, investigación. <br>
+              </p>
+            </dt>
+          </figure>
+        </div>
+        <div class="col-4">
+          <!-- ESPACIO -->
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <!-- ESPACIO -->
+        </div>
+        <div class="col-5">
+          <figure>
+            <blockquote class="blockquote">
+              <h4>
+                <cite title="Source Title">2019-2020</cite>
+              </h4>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Primer Nivel
+            </figcaption>
+            <dt class="col-sm-13">
+              <p>
+                Una vez que la universidad, verfico que aprove el examen final del preuniversitario, pude ingresar al primer semestre, donde
+                me enseñaron mis primeras materias afines a la carrera: Cálculo, introducción ingeniería de software, algoritmo y lógica de
+                programación, lenguaje y comunicación.<br>
+              </p>
+            </dt>
+          </figure>
+        </div>
+      </div>
+      <div class="row justify-content-around">
+        <div class="col-4">
+          <figure class="text-end">
+            <blockquote class="blockquote">
+              <h4>
+                <cite title="Source Title">2018-2019</cite>
+              </h4>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+              Preuniversitario
+            </figcaption>
+            <dt class="col-sm-13">
+              <p>
+                Después de tener un cupo de ingreso al preuniversitario, estudie la materias básicas que impartieron, por una duración de
+                un mes y medio, acabado ese tiempo realice un examen final para poder obtener el ingreso al primer semestre.<br>
+              </p>
+            </dt>
+          </figure>
+        </div>
+        <div class="col-4">
+          <!-- ESPACIO -->
+        </div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!-- HABILIDADES -->
+    <figure class="text-center">
+      <blockquote>
+        <h2>HABILIDADES</h2>
+      </blockquote>
+      <figcaption>
+        <div>
+          <button type="button" class="btn btn-outline-light rounded-pill">CSS</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">HTML</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">JavaScript</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">TypeScript</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">react.ja</button>
+          <br><br>
+          <button type="button" class="btn btn-outline-light rounded-pill">Node.js</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Express</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Python</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Django</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Vbnet</button>
+          <br><br>
+          <button type="button" class="btn btn-outline-light rounded-pill">Csharp</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Vfox</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Mysql</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Postgress</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">MongoDB</button>
+          <br><br>
+          <button type="button" class="btn btn-outline-light rounded-pill">Firebase</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Sql Server</button>
+          <button type="button" class="btn btn-outline-light rounded-pill">Genexus</button>
+        </div>
+      </figcaption>
+    </figure>
+
+    <!-- CURSOS -->
     
-</body>
+
+    <p style="height: 1800px;"></p>
+  </body>
 </html>

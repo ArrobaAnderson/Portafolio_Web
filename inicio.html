@@ -3,24 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="estilo.css">
+    <link rel="stylesheet" href="static/css/estilo.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <style>
       body {
-        padding-top:100px;
+        background-image: linear-gradient(to right, DarkOrchid,RebeccaPurple, DarkSlateBlue,SlateBlue, DarkOrchid, SlateBlue, DarkSlateBlue,RebeccaPurple,Indigo);
+        font-family: 'Courier New', Courier, monospace;
+        padding-top:90px;
+        margin:10px;
       }
     </style>
     <title>Portafolio Web</title>
   </head>
   <body>
     <!-- Barra de Navegación -->
-    <nav class="container-fluid navbar navbar-expand-sm bg-dark navbar-dark border-3 border-bottom border-danger fixed-top">
-      <a href="estilo.css" class="navbar-brand">
-        <img class="rounded-pill" src="zona.jpg" alt="Foto del creador" style="width:70px"ALIGN="LEFT" hspace=10 vspace=-10>
-         Anderson Arroba <br> {Estudiante}
+    <nav class="text-center text-sm-start container-fluid navbar navbar-expand-sm bg-dark navbar-dark border-3 border-bottom border-danger fixed-top ">
+      <a href="#" class="navbar-brand text-light">
+        <img class="rounded-pill" src="static/img/perfil.jpg" alt="Foto del creador" width="60" height="60" ALIGN="LEFT" hspace=10 vspace=-10>
+        Anderson Arroba <br> {Estudiante}
       </a>
       <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
         <span class="navbar-toggler-icon"> </span>
@@ -28,193 +33,381 @@
       <div id="Menu" class="collapse navbar-collapse justify-content-between">
         <a></a>
         <ul class="navbar-nav ms-100">
-          <li class="nav-item"><a class="nav-link" href="#">PERFIL</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">HABILIDADES</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">PERFIL</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">EXPERIENCIA</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">HABILIDADES</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="menuDesl" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-light" href="#" id="menuDesl" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               CURSOS
             </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-              <li><a class="dropdown-item" href="#">Html5</a></li>
-              <li><a class="dropdown-item" href="#">Css3</a></li>
-              <li><a class="dropdown-item" href="#">jS</a></li>
+            <ul class="dropdown-menu text-center text-sm-start" aria-labelledby="navbarDropdownMenuLink" style="background-color:#3f4145;">
+              <li><a class="dropdown-item text-light" href="#">Html5</a></li>
+              <li><a class="dropdown-item text-light" href="#">Css3</a></li>
+              <li><a class="dropdown-item text-light" href="#">jS</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#">CONTACTO</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#">CONTACTO</a></li>
         </ul>
       </div>
     </nav>
 
     <!-- PERFIL -->
-    <div class="container">
-      <div class="row">
-        <dt class="col-sm-4">
-          <h1>
-            Hola, soy <br> Anderson Arroba
-          </h1>
-          <p>
-            Soy un estudiante de la Universidad Estatal de Milagro "UNEMI", sigo la carrera de Ingenieria de Software, actualmente curso el
-            Cuarto Nivel, aspiro ser un desarrollador de programas y páginas web. La carrera que estudio se trata de diseñar aplicaciones
-            de Software, mi futura responsabilidad es trabajar con un equipo de analistas de control de calidad, gerentes de productos y
-            desarrolladores de software para verificar la calidad del software e identificar cualquier error.
-            <br>
-            <button type="button" class="btn btn-dark">Descargar CV</button>
-          </p>
-        </dt>
-      <div class="col-sm-7">
-          <img src="zona.jpg" class="rounded float-end" alt="Foto del creador" width="450" height="450" ALIGN="LEFT" hspace=10 vspace=10>
+    <section style="background-color: darkslateblue;">
+      <br>
+      <br>
+      <div class="container">
+        <div class="row">
+          <dt class="col-sm-6">
+            <h1 class="text-center text-sm-start text-light ">
+              Hola, soy <br> Anderson Arroba
+            </h1>
+            <p class="text-center text-sm-start">
+              Soy un estudiante de la Universidad Estatal de Milagro "UNEMI", sigo la carrera de Ingenieria de Software, actualmente curso el
+              Cuarto Nivel, aspiro ser un desarrollador de programas y páginas web. La carrera que estudio se trata de diseñar aplicaciones
+              de Software, mi futura responsabilidad es trabajar con un equipo de analistas de control de calidad, gerentes de productos y
+              desarrolladores de software para verificar la calidad del software e identificar cualquier error.
+              <br>
+              <button type="button" class="btn btn-dark fw-bolder">Descargar CV</button>
+            </p>
+          </dt>
+        <div class="col-sm-6">
+            <img src="static/img/perfil.jpg" class="img-thumbnail rounded mx-auto d-block img-fluid" alt="Foto del creador" ALIGN="right"  width="450" height="auto" hspace=10 vspace=10>
+        </div>
       </div>
-    </div>
     <br>
     <br>
+    </section>
     <br>
     <br>
 
     <!-- EXPERIENCIA -->
-    <div class="container">
-        <figure class="text-center">
-          <blockquote>
-            <h2>EXPERIENCIA</h2>
-          </blockquote>
-          <div class="col-4"></div>
-        </figure>
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="text-center text-light" >
+            <h2>
+              EXPERIENCIA
+            </h2>
+          </div>
+        </div>
+      </div>
       <br>
-      <div class="row justify-content-around">
-        <div class="col-4">
-          <!-- ESPACIO -->
-        </div>
-        <div class="col-5">
-          <figure>
-            <blockquote class="blockquote">
-              <h4>
-                <cite title="Source Title">2021-2022</cite>
-              </h4>
-            </blockquote>
-            <figcaption class="blockquote-footer">
+      <!-- EXP.1 -->
+      <div class="row justify-content-around text-start text-sm-strat">
+        <div class="offset-lg-6 col-lg-4" >
+          <h4>2021-2022</h4> 
+          <figcaption class="text-light blockquote-footer">
+            <cite>
               Tercer Nivel
-            </figcaption>
-            <dt class="col-sm-13">
-              <p>
-                En mi ultimo semestre culminado, pusimos en practica todos los conocimiento antes aprendido y Python fue el lenguajes de programación
-                que me enseñaron por ser un lenguaje sencillo de leer y escribir porque es muy similar al lenguaje humano. Además, es de código 
-                abierto y, por lo tanto, un lenguaje multiplataforma, lo que le permite desarrollar software sin restricciones, y actualmente
-                es el mas utilzado por los programadores profesionales.<br>
-              </p>
-            </dt>
-          </figure>
+            </cite>
+          </figcaption>
+          <dt class="col-sm-13">
+            <p>
+              En mi ultimo semestre culminado, pusimos en practica todos los conocimiento antes aprendido y Python fue el lenguajes de programación
+              que me enseñaron por ser un lenguaje sencillo de leer y escribir porque es muy similar al lenguaje humano. Además, es de código 
+              abierto y, por lo tanto, un lenguaje multiplataforma, lo que le permite desarrollar software sin restricciones, y actualmente
+              es el mas utilzado por los programadores profesionales.<br>
+            </p>
+          </dt>
         </div>
       </div>
-      <div class="row justify-content-around">
-        <div class="col-4">
-          <figure class="text-end">
-            <blockquote class="blockquote">
-              <h4>
-                <cite title="Source Title">2020-2021</cite>
-              </h4>
-            </blockquote>
-            <figcaption class="blockquote-footer">
+      <br>
+      <!-- EXP.2 -->
+      <div class="row aling-content-center text-strat text-sm-end ">
+        <div class="offset-lg-2 col-lg-3 col-md-8" >
+          <h4>2020-2021</h4>
+          <figcaption class="text-light blockquote-footer">
+            <cite>
               Segundo Nivel
-            </figcaption>
-            <dt class="col-sm-13">
-              <p>
-                En este semestre, me dieron conocimientos de espacios al momento de programar o hacer alguna operación matemática con las
-                diversas materias: Álgebra lineal, física, ingeniería de requerimientos de software, técnicas de programación, investigación. <br>
-              </p>
-            </dt>
-          </figure>
-        </div>
-        <div class="col-4">
-          <!-- ESPACIO -->
+            </cite>
+          </figcaption>
+          <dt class="col-sm-13">
+            <p>
+              En este semestre, me dieron conocimientos de espacios al momento de programar o hacer alguna operación matemática con las
+              diversas materias: Álgebra lineal, física, ingeniería de requerimientos de software, técnicas de programación, investigación. <br>
+            </p>
+          </dt>
         </div>
       </div>
-      <div class="row justify-content-around">
-        <div class="col-4">
-          <!-- ESPACIO -->
-        </div>
-        <div class="col-5">
-          <figure>
-            <blockquote class="blockquote">
-              <h4>
-                <cite title="Source Title">2019-2020</cite>
-              </h4>
-            </blockquote>
-            <figcaption class="blockquote-footer">
+      <br>
+      <!-- EXP.3 -->
+      <div class="row justify-content-around text-start text-sm-strat">
+        <div class="offset-lg-6 col-lg-4" >
+          <h4>2019-2020</h4>
+          <figcaption class="text-light blockquote-footer">
+            <cite>
               Primer Nivel
-            </figcaption>
-            <dt class="col-sm-13">
-              <p>
-                Una vez que la universidad, verfico que aprove el examen final del preuniversitario, pude ingresar al primer semestre, donde
-                me enseñaron mis primeras materias afines a la carrera: Cálculo, introducción ingeniería de software, algoritmo y lógica de
-                programación, lenguaje y comunicación.<br>
-              </p>
-            </dt>
-          </figure>
+            </cite>
+          </figcaption>
+          <dt class="col-sm-13">
+            <p>
+              Una vez que la universidad, verfico que aprove el examen final del preuniversitario, pude ingresar al primer semestre, donde
+              me enseñaron mis primeras materias afines a la carrera: Cálculo, introducción ingeniería de software, algoritmo y lógica de
+              programación, lenguaje y comunicación.<br>
+            </p>
+          </dt>
         </div>
       </div>
-      <div class="row justify-content-around">
-        <div class="col-4">
-          <figure class="text-end">
-            <blockquote class="blockquote">
-              <h4>
-                <cite title="Source Title">2018-2019</cite>
-              </h4>
-            </blockquote>
-            <figcaption class="blockquote-footer">
+      <br>
+      <!-- EXP.4 -->
+      <div class="row aling-content-center text-strat text-sm-end ">
+        <div class="offset-lg-2 col-lg-3 col-md-8" >
+          <h4>2018-2019</h4>
+          <figcaption class="text-light blockquote-footer">
+            <cite>
               Preuniversitario
-            </figcaption>
-            <dt class="col-sm-13">
-              <p>
-                Después de tener un cupo de ingreso al preuniversitario, estudie la materias básicas que impartieron, por una duración de
-                un mes y medio, acabado ese tiempo realice un examen final para poder obtener el ingreso al primer semestre.<br>
-              </p>
-            </dt>
-          </figure>
-        </div>
-        <div class="col-4">
-          <!-- ESPACIO -->
+            </cite>
+          </figcaption>
+          <dt class="col-sm-13 ">
+            <p>
+              Después de tener un cupo de ingreso al preuniversitario, estudie la materias básicas que impartieron, por una duración de
+              un mes y medio, acabado ese tiempo realice un examen final para poder obtener el ingreso al primer semestre.<br>
+            </p>
+          </dt>
         </div>
       </div>
-    </div>
-    <br>
-    <br>
+    </section>
     <br>
     <br>
     <!-- HABILIDADES -->
-    <figure class="text-center">
-      <blockquote>
-        <h2>HABILIDADES</h2>
-      </blockquote>
-      <figcaption>
-        <div>
-          <button type="button" class="btn btn-outline-light rounded-pill">CSS</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">HTML</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">JavaScript</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">TypeScript</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">react.ja</button>
-          <br><br>
-          <button type="button" class="btn btn-outline-light rounded-pill">Node.js</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Express</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Python</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Django</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Vbnet</button>
-          <br><br>
-          <button type="button" class="btn btn-outline-light rounded-pill">Csharp</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Vfox</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Mysql</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Postgress</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">MongoDB</button>
-          <br><br>
-          <button type="button" class="btn btn-outline-light rounded-pill">Firebase</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Sql Server</button>
-          <button type="button" class="btn btn-outline-light rounded-pill">Genexus</button>
-        </div>
-      </figcaption>
-    </figure>
-
+    <section style="background-color: darkslateblue;">
+      <br>
+      <br>
+      <figure class="text-center text-light">
+        <blockquote>
+          <h2>HABILIDADES</h2>
+        </blockquote>
+        <figcaption>
+          <div>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">CSS</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">HTML</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">HTML</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">JavaScript</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">TypeScript</a>
+            <br><br>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">react.ja</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Node.js</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Express</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Python</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Django</a>
+            <br><br>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Vbnet</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Csharp</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Vfox</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Mysql</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Postgress</a>
+            <br><br>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">MongoDB</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Firebase</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Sql Server</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Genexus</a>
+  
+          </div>
+        </figcaption>
+      </figure>
+      <br>
+      <br>
+    </section>
+    <br>
+    <br>
     <!-- CURSOS -->
-    
+    <figure class="text-center text-light">
+      <blockquote>
+        <h2>CURSOS</h2>
+      </blockquote>
+    </figure>
+    <div class="container">
+      <div class="row">
 
-    <p style="height: 1800px;"></p>
+        <!-- HTML5 -->
+        <dt class="col-sm-6">
+          <article class="mb-3 shadow-lg flex-item">
+            <h3 class="text-center text-light mb-0 col-13">HTML5</h3>
+            <figure class="container justify-content-center figure ">
+              <p class="text-center">
+                <img src="static/img/html5.png" alt="HTML5" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+              </p>
+              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
+                El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.
+                Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
+              </figcaption>
+            </figure>       
+          </article>
+        </dt>
+
+        <!-- CSS3 -->
+        <dt class="col-sm-6">
+          <article class="mb-3 shadow-lg flex-item">
+            <h3 class="text-center text-light mb-0 col-13">CSS3</h3>
+            <figure class="figure">
+              <p class="text-center">
+                <img src="static/img/css.png" alt="CSS3" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+              </p>
+              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
+                CSS«hojas de estilo en cascada» (Cascading Style Sheets), básicamente, es un lenguaje que maneja el diseño
+                y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga
+                del contenido básico de las páginas
+              </figcaption>
+            </figure>       
+          </article>
+        </dt>
+        
+        <!-- JAVASCRIPT -->
+        <dt class="col-sm-6">
+          <article class="mb-3 shadow-lg flex-item">
+            <h3 class="text-center text-light mb-0 col-13">JavaScript</h3>
+            <figure class="figure">
+              <p class="text-center">
+                <img src="static/img/js.png" alt="JavaScript" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+              </p>
+              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
+                JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo,
+                juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo
+                dinámicos, animación, y mucho más).
+              </figcaption>
+            </figure>       
+          </article>
+        </dt>
+
+        <!-- BOOTSTRAP -->
+        <dt class="col-sm-6">
+          <article class="mb-3 shadow-lg flex-item">
+            <h3 class="text-center text-light mb-0 col-13">Bootstrap 5</h3>
+            <figure class="figure">
+              <p class="text-center">
+                <img src="static/img/B.png" alt="Bootstrap 5" class="img-fluid figure-img alicenter" width="285" height="auto" vspace=15>
+              </p>
+              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
+                Bootstrap es un framework CSS y Javascript diseñado para la creación de interfaces limpias y con un diseño responsive. Además,
+                ofrece un amplio abanico de herramientas y funciones, de manera que los usuarios pueden crear prácticamente cualquier tipo de
+                sitio web haciendo uso de los mismos.
+              </figcaption>
+            </figure>       
+          </article>
+        </dt>
+      </div>
+    </div>
+    <!-- CONTACTO -->
+    <section style="background-color: darkslateblue;">
+      <br>
+      <br>
+      <div class="container col">
+        <div class="row">
+          <dt class="col-sm-6  text-light">
+            <h4 class="text-strat fw-bolder">
+              Contacto
+            </h4>
+            <p class="text-sm-start">
+              Dirección:<br>
+              El Triunfo, Guayas, Ecuador<br>
+              email:<br>
+              aarrobac@unemi.edu.ec<br>
+              Deje su mensaje y con gusto le respondere<br>
+              <br>
+              <!--Iconos-->
+              <!-- HARRY POTTER -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#9FA8DA" d="M41.9,15c-0.2-0.5-0.6-0.9-0.9-1.3c-1.2-1.4-2.1-3.3-3.3-4.7c-0.3,0-0.5,0-0.7,0.1c-0.4,0.1-1.7,0.5-3,0.9V8h-6l0.2,3.3C26.5,11.7,25,12,25,12V3l1-2l-6.9,0L20,3v11c-1,0.8-3.6,2.9-4,3V4l1-2h-7l1,2v13c0,0-0.4-0.1-0.6-0.2c-0.9-0.4-1.7-0.9-2.5-1.4c-0.3-0.2-0.6-0.4-0.8-0.7c0.7-0.4,1.1-1,1.8-1.4C9,13.3,9,13.1,9,13c-1.1,0.2-1.9,0.6-3,1v0.1c0.2,0.6,0.5,1.1,0.9,1.6c0.4,0.6,0.8,1.2,1.5,1.5c0.9,0.5,1.7,1.3,2.7,1.7v8l-1,2h7l-1-2v-8.1c1.4-0.3,2.8-1.3,4-2.2V29l-1,2h7l-1-2V14c0.3-0.2,1.7-0.6,3.3-1.1L29,23l-2-1l2,10l-2-1l3,16l1-10l1,2V29l2,2v-7.9c0.7,0.9,1.6,2,2,2.7c0.1,0.1,0.3,0.1,0.4,0.1c0.7-0.1,2-0.3,2.6-0.5c1-0.3,1.7-0.5,2.4-1.2c0,0,0.3-0.9,0.2-0.9c0.2-2.3,0.2-4.8,0.3-7.1C42,15.8,42.1,15.4,41.9,15z M37,23c0,0.1-0.9,1.2-1,1c-0.4-0.5-1.6-1.5-2-2V11.7c0.9-0.2,2-0.6,2.5-0.7c0,0,0.1,0,0.1,0c0.1,0,0.2,0,0.3,0.1c0.1,0.1,0.1,0.2,0.1,0.4c0.4,1.9,0.5,3.8,0.6,5.7c0,0.4,0,0.9,0.1,1.3C37.7,19.5,37,23,37,23z"></path><path fill="#C5CAE9" d="M10,29l3-2l4,2H10z M26,31l-4-2l-3,2H26z"></path><path fill="#5C6BC0" d="M17,2l-4,2l-3-2H17z M19,1l3,2l4-2H19z M28,8l3,2l3-2H28z"></path><path fill="#7986CB" d="M10,2l3,2v23l-3,2l1-2v-8c-0.9-0.4-3.5-2-4.1-3.2c-0.3-0.5-0.6-1.1-0.9-1.6V14c1-0.5,1.8-0.9,3-1c0,0.1,0,0.3-0.1,0.3c-0.7,0.4-1.1,1-1.8,1.4c0.2,0.3,0.5,0.5,0.8,0.7c0.8,0.5,1.6,1,2.5,1.4C10.6,16.9,11,17,11,17V4L10,2z M20,3v11c-1,0.8-3.6,2.9-4,3v1c2.2-0.6,4-2.5,4-2.5v1.2V29l-1,2l3-2V3l-2.9-1.9L20,3z M28.2,11.3C26.5,11.7,25,12,25,12v1c0,0,1.5-0.5,3.3-0.9L29,23l-2-1l2,10l-2-1l3,16l-1-14l1,1V24l1,1V10l-3-2L28.2,11.3z M37,11l-0.4,0c0.1,0,0.4,0.1,0.4,0.1V23c0,0-0.9,1.2-1,1l0.5,0.3h0L39,23v-9L37,11z"></path></svg>
+              <!-- JOKER -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#a4a4a4" d="M33.692 26.125c0 0 2.689-4.125 3.976-4.125.53 0 .265 1.629.265 2.475C37.934 25.321 37 26.436 37 27v3c0 1.1-1.692 3-3.308 3V26.125zM14.308 26.125c0 0-2.689-4.125-3.976-4.125-.53 0-.265 1.629-.265 2.475C10.066 25.321 11 26.436 11 27v3c0 1.1 1.692 3 3.308 3V26.125z"></path><path fill="#388e3c" d="M13,25c-5-7-5-15-5-15c3,0,8-8,16-8s13,8,16,8c0,0,0,8-5,15H13z"></path><path fill="#e0e0e0" d="M35,17c0-0.14-0.01-0.27-0.02-0.4c-0.21-1.69-1.66-3.86-3.98-4.45c-0.39-0.1-0.8-0.15-1.24-0.15 C27,12,24,15,24,15s-3-3-5.76-3c-0.44,0-0.85,0.05-1.24,0.15c-2.32,0.59-3.77,2.76-3.98,4.45C13.01,16.73,13,16.86,13,17 c0,2,1,3,1,3l-1,1c0,0,0,2,0,5v3c0,0,0.28,0.48,0.58,1.06C20.44,43.61,20.51,46,20.51,46H24h3.49c0,0,0.07-2.39,6.93-15.94 C34.72,29.48,35,29,35,29v-3c0-3,0-5,0-5l-1-1C34,20,35,19,35,17z"></path><path fill="#bdbdbd" d="M35 29v6c.003.532-.227 1.117-.597 1.511-1.133 1.207-3.623 3.892-4.367 4.974C28.938 43.078 27.487 46 27.487 46 27.487 41.824 34.733 29.457 35 29zM13 29c0 1.594 0 6 0 6-.002.532.228 1.116.598 1.51 1.133 1.204 3.621 3.883 4.365 4.964 1.097 1.594 2.549 4.516 2.549 4.516C20.511 41.814 13.267 29.457 13 29zM34 20l1 1c0 0 0 2 0 5 0 0-1.53-1-4-1l-3.43 1.88h-1.25L30 22h1v-9.85c2.32.59 3.77 2.76 3.98 4.45C34.99 16.73 35 16.86 35 17 35 19 34 20 34 20zM14 20l-1 1c0 0 0 2 0 5 0 0 1.53-1 4-1l3.43 1.88h1.25L18 22h-1v-9.85c-2.32.59-3.77 2.76-3.98 4.45C13.01 16.73 13 16.86 13 17 13 19 14 20 14 20z"></path><path d="M25.872 26.708c0 0 1.11 1.292 2.606 1.292 1.616 0 2.943-1 3.522-2.5 0 0-1.375-.5-3.474-.5C27.778 25.812 25.872 26.708 25.872 26.708zM22.202 26.708c0 0-1.123 1.292-2.637 1.292-1.636 0-2.979-1-3.565-2.5 0 0 1.392-.5 3.516-.5C20.273 25.812 22.202 26.708 22.202 26.708z"></path><path fill="#fbc02d" d="M30.842 26c0 0-.869 1.25-2.316 1.25-1.448 0-2.027-.75-2.027-.75s.521-.45 1.077-.61c.29-.08.614-.14.95-.14.243 0 .533.03.834.08C30.089 25.96 30.842 26 30.842 26zM17.172 26c0 0 .879 1.25 2.344 1.25 1.465 0 2.051-.75 2.051-.75s-.527-.45-1.09-.61c-.293-.08-.621-.14-.961-.14-.246 0-.539.03-.844.08C17.934 25.96 17.172 26 17.172 26z"></path><path fill="#b71c1c" d="M29.429 26.15c0 .45-.429.82-.95.82-.533 0-.95-.37-.95-.82 0-.09.012-.18.046-.26.29-.08.614-.14.95-.14.243 0 .533.03.834.08C29.406 25.93 29.429 26.04 29.429 26.15zM18.602 26.15c0 .45.434.82.961.82.539 0 .961-.37.961-.82 0-.09-.012-.18-.047-.26-.293-.08-.621-.14-.961-.14-.246 0-.539.03-.844.08C18.625 25.93 18.602 26.04 18.602 26.15zM26.185 35.778c-1.115 0-2.148.778-2.148.778s-1.033-.778-2.148-.778c-1.115 0-3.493.153-6.839-3.111 0 0 4.309 7.348 7.376 9.025 0 0 .447.308 1.58.308 1.133 0 1.58-.308 1.58-.308 3.067-1.677 7.356-9.025 7.356-9.025C29.597 35.931 27.3 35.778 26.185 35.778z"></path><path fill="#ffe082" d="M30,36c0,0-1.617,2.04-2.87,3.1c-0.616,0.52-1.325,0.99-2.087,1.23C24.71,40.44,24.355,40.5,24,40.5 s-0.71-0.06-1.043-0.17c-0.762-0.24-1.471-0.71-2.087-1.23C19.617,38.04,18,36,18,36s3.913,1.5,6,1.5S30,36,30,36z"></path><g><path fill="#bdbdbd" d="M26.82,31.774C25.34,30.666,25,28.395,25,28.395C25,26.765,25,26,25,26h-2c0,0,0,0.765,0,2.395 c0,0-0.34,2.271-1.82,3.379C20.99,31.937,21,32.198,21,32.198c0,0.608,2.75,1.63,3,1.63s3-1.021,3-1.63 C27,32.198,27.01,31.937,26.82,31.774z"></path><path fill="#bdbdbd" d="M26.82,31.774C25.34,30.666,25,28.395,25,28.395C25,26.765,25,26,25,26h-2c0,0,0,0.765,0,2.395 c0,0-0.34,2.271-1.82,3.379C20.99,31.937,21,32.198,21,32.198c0,0.608,2.75,1.63,3,1.63s3-1.021,3-1.63 C27,32.198,27.01,31.937,26.82,31.774z"></path></g><g><path fill="#388e3c" d="M25 27c3.375-2 4.063-6 6.531-6S34 24 34 24s-.844-1-2.25-1S27.812 27 25 27zM22.963 27c-3.361-2-4.046-6-6.505-6S14 24 14 24s.84-1 2.241-1S20.162 27 22.963 27z"></path></g><path fill="#eee" d="M26.5,31.654c-0.28,0-0.5,0.239-0.5,0.543c0,0.304-0.22,0.543-0.5,0.543S25,32.502,25,32.198L25,26 h-2l0,6.198c0,0.304-0.22,0.543-0.5,0.543S22,32.502,22,32.198c0-0.304-0.22-0.543-0.5-0.543S21,31.893,21,32.198 c0,0.141,0.04,0.261,0.12,0.348c0,0,1.11,1.238,1.46,1.695c0.28,0.38,1.05,1.575,1.05,1.575C23.72,35.924,23.85,36,24,36 s0.28-0.076,0.37-0.185c0,0,0.77-1.195,1.05-1.575c0.35-0.456,1.46-1.695,1.46-1.695c0.08-0.087,0.12-0.206,0.12-0.348 C27,31.893,26.78,31.654,26.5,31.654z"></path><path fill="#bdbdbd" d="M22.963,27c0.537,0,1.074,0,1.074,0s0.537,0,1.074,0c1.611,0,3.676-4,3.676-4 s-2.334,2.452-2.871,2.194s0.806-5.417,0.806-5.417S25.145,25.001,24,25c-1.085,0-2.648-5.222-2.648-5.222s1.343,5.159,0.806,5.417 S19.191,23,19.191,23S21.352,27,22.963,27z"></path><g><path fill="#ffecb3" d="M23 37.41v2.93c-.01 0-.03-.01-.04-.01-.72-.22-1.37-.65-1.96-1.13v-2.23C21.67 37.15 22.37 37.32 23 37.41zM27 36.97v2.23c-.59.48-1.24.91-1.96 1.13-.01 0-.03.01-.04.01v-2.93C25.63 37.32 26.33 37.15 27 36.97z"></path></g></svg>
+              <!-- DEAD POOL -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#a31919" d="M33,38.238V26H13v12.238c0,1.065-0.575,2.034-1.484,2.589C8.067,42.933,5,46,5,46h36 c0,0-3.067-3.067-6.516-5.173C33.575,40.272,33,39.304,33,38.238z"></path><path fill="#424242" d="M34.46,40.81C30.91,42.22,27.05,43,23,43s-7.91-0.78-11.46-2.19c0.89-0.56,1.46-1.52,1.46-2.57 v-0.89C16.14,38.42,19.5,39,23,39s6.86-0.58,10-1.65v0.89C33,39.29,33.57,40.25,34.46,40.81z"></path><path fill="#a31919" d="M33 20.75c0 0-.694-2.75 1.985-2.75C36 18 37 19 37 22s-2.508 6-4 6V20.75zM12.919 20.75c0 0 .694-2.75-1.985-2.75-1.015 0-2.015 1-2.015 4s2.508 6 4 6V20.75z"></path><path fill="#c62828" d="M23,2C11.29,2,11,12,11,12c0,3.71,0,20.639,0,20.639c0,0.865,0.373,1.688,1.024,2.258L14,36.625l0,0 l4.152,3.633C18.699,40.736,19.401,41,20.127,41h5.746c0.727,0,1.429-0.264,1.976-0.742L32,36.625l0,0l1.976-1.729 C34.627,34.327,35,33.504,35,32.639c0,0,0-16.929,0-20.639C35,12,34.71,2,23,2z"></path><path fill="#b71c1c" d="M16 12v19l-.004 7.371L14 36.62l-1.98-1.72C11.37 34.33 11 33.5 11 32.64c0 0 0-16.93 0-20.64 0 0 .159-5.49 4.999-8.33L16 12zM30 12v19l.004 7.371L32 36.62l1.98-1.72c.65-.57 1.02-1.4 1.02-2.26 0 0 0-16.93 0-20.64 0 0-.159-5.49-4.999-8.33L30 12z"></path><path fill="#424242" d="M26 14c0 0 3.357-2 4-2s3 7.593 3 9c0 2.111-1.714 10-3 10s-6-6.593-6-8C24 20.889 26 14 26 14zM20 14c0 0-3.357-2-4-2-.643 0-3 7.593-3 9 0 2.111 1.714 10 3 10s6-6.593 6-8C22 20.889 20 14 20 14z"></path><g><path fill="#212121" d="M30 12c.643 0 3 7.593 3 9 0 2.111-1.714 10-3 10V12zM16 12c-.643 0-3 7.593-3 9 0 2.111 1.714 10 3 10V12z"></path></g><path fill="#eee" d="M25 22c0 0 1.343 0 3 0s3-.555 3-.667C31 20.781 30.657 20 29 20S25 22 25 22zM21 22c0 0-1.343 0-3 0s-3-.555-3-.667C15 20.781 15.343 20 17 20S21 22 21 22z"></path></svg>
+              <!-- ITACHI -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 48 48"
+                style=" fill:#000000;"><path fill="#313131" d="M24,8L24,8C15.716,8,9,14.716,9,23v16c0.871,3.394,2,6,2,6v-6h0.5l0.5,4c1.719,3.625,4,5,4,5v-5h15v5	c0,0,4-2,6-9l1,6c0,0,1-5,1-13v-9C39,14.716,32.284,8,24,8z"></path><path fill="#ffdbd0" d="M14,20v20.481c0,0.494,0.178,0.967,0.509,1.334c0.003,0.003,0.005,0.006,0.008,0.01 c0.3,0.33,0.701,0.74,1.147,1.175h-0.008c2.142,2.091,5.721,5,8.344,5s6.202-2.909,8.344-5h-0.008 c0.446-0.435,0.847-0.845,1.147-1.175c0.003-0.003,0.005-0.006,0.008-0.01C33.822,41.448,34,40.976,34,40.481V20H14z"></path><path fill="#f5e9e8" d="M35,28c0,0-4,0-5,0c-2,0-3,2-3,2v1l8,0V28z"></path><circle cx="30.5" cy="29.5" r="1.5" fill="#bf360c"></circle><path fill="#212121" d="M27,30c0,0,0.875-1,6.125-1L35,29v-2c0,0-2.5,0-3,0C28,27,27,30,27,30z"></path><polygon fill="#2c2c2c" points="36,24 28,27 26,27 31,24"></polygon><path fill="#f5e9e8" d="M13,28c0,0,4,0,5,0c2,0,3,2,3,2v1l-8,0V28z"></path><circle cx="17.5" cy="29.5" r="1.5" fill="#bf360c"></circle><path fill="#212121" d="M21,30c0,0-0.875-1-6.125-1L13,29l0-2c0,0,2.5,0,3,0C20,27,21,30,21,30z"></path><polygon fill="#2c2c2c" points="12,24 20,27 22,27 17,24"></polygon><g><path fill="#ffbca7" d="M26,27c0,0-1,1-1,2c0,2,7,9,7,9s-5-8-5-9s1-2,1-2H26z"></path><path fill="#ffbca7" d="M22,27c0,0,1,1,1,2c0,2-7,9-7,9s5-8,5-9s-1-2-1-2H22z"></path><rect width="6" height="2" x="21" y="41" fill="#ffbca7"></rect><path fill="#ffbca7" d="M22,37h4c0,0-1,2-2,2S22,37,22,37z"></path><path fill="#ffbca7" d="M23,33v-4l-2,1C21,30,22,30.5,23,33z"></path></g><g><rect width="26" height="12" x="11" y="13" fill="#6c6c76"></rect><rect width="26" height="8" x="11" y="15" fill="#b2b2bc"></rect><path fill="#6c6c76" d="M28.229,16.021c-0.195-0.195-0.512-0.195-0.707,0l-0.806,0.806C26.245,16.487,25.373,16,24.25,16 c-1.775,0-3.164,1.305-3.236,2.992l-0.974,2.314c-0.065,0.154-0.048,0.331,0.044,0.47C20.176,21.916,20.333,22,20.5,22h3.375 C24.696,22,26,21.423,26,19.875C26,18.789,25.369,18,24.5,18c-1.035,0-1.431,0.853-1.495,1.304 c-0.039,0.273,0.151,0.527,0.425,0.566c0.264,0.038,0.525-0.151,0.565-0.424C24.002,19.4,24.071,19,24.5,19 c0.328,0,0.5,0.44,0.5,0.875C25,20.969,23.887,21,23.875,21C22.719,21,22,20.282,22,19.125C22,18.081,22.842,17,24.25,17 c1.263,0,2.14,0.847,2.146,0.854c0.195,0.195,0.512,0.195,0.707,0l1.125-1.125C28.424,16.533,28.424,16.217,28.229,16.021z"></path><rect width="26" height="2" x="11" y="18" fill="#6c6c76"></rect></g><g><rect width="2" height="20" x="12" y="13" fill="#313131"></rect><rect width="2" height="20" x="34" y="13" fill="#313131"></rect><rect width="2" height="2" x="16" y="13" fill="#2c2c2c"></rect><rect width="2" height="2" x="30" y="13" fill="#2c2c2c"></rect><path fill="#424242" d="M38.5,8.125C35.329,4.161,29.375,2,28,2c-2,0-2.745,1-4,1s-2-1-4-1c-1.375,0-7.329,2.161-10.5,6.125 C7.5,10.625,6,17.078,6,22c0,7.147,1,18,1,18l1-8c0,0,0,2.625,1,7c0-3,1-9,1-9s0,8,2,13c0-8.5,2-25,2-25c1,5,2,7,2,7s0-10,1-12 c0,0,0,15,2,19c0-14,1-22,1-22s2,0,4,3c2-3,4-3,4-3s1,15,1,26c2-4,2-23,2-23c1,5,1,12,1,12s1-1,2-7c0,0,2,5,2,18c2-5,2-8,2-8 s0,9,0,17c2-5,2-13,2-13l1,8c0,0,1-8,1-18C42,17.078,40.5,10.625,38.5,8.125z"></path></g></svg>
+              <!-- VENDETTA -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="55" height="55"
+                viewBox="0 0 100 100"
+                style=" fill:#000000;"><path fill="#fefdef" d="M50,87c-7.764,0-29-16.441-29-29l0-34.871c0-3.664,2.481-6.886,6.04-7.757 C32.011,14.156,39.771,13,50,13s17.989,1.156,22.96,2.372c3.559,0.871,6.04,4.093,6.04,7.757L79,58C79,70.559,57.764,87,50,87z"></path><path fill="#a4a29a" d="M12,46.5h-1.5c0,6.627,4.477,12,10,12v-7C14,51.5,12,46.5,12,46.5z"></path><path fill="#d1cfc2" d="M20.5,41.5v-7c-5.523,0-10,5.373-10,12c0,1.002,0.114,1.97,0.307,2.901 C10.873,49.103,12.656,41.5,20.5,41.5z"></path><path fill="#a4a29a" d="M88,46.5h1.5c0,6.627-4.477,12-10,12v-7C86,51.5,88,46.5,88,46.5z"></path><path fill="#d1cfc2" d="M79.5,41.5v-7c5.523,0,10,5.373,10,12c0,1.002-0.114,1.97-0.307,2.901 C89.127,49.103,87.344,41.5,79.5,41.5z"></path><circle cx="30.5" cy="49.5" r="3" fill="#f3cbca"></circle><circle cx="69.5" cy="49.5" r="3" fill="#f3cbca"></circle><g><path fill="#1f212b" d="M50,88c-8.25,0-30-16.67-30-30V23.129c0-4.159,2.797-7.748,6.802-8.729 C30.465,13.504,38.35,12,50,12s19.535,1.504,23.198,2.4C77.203,15.381,80,18.97,80,23.129V58C80,71.33,58.25,88,50,88z M50,14 c-11.44,0-19.147,1.468-22.723,2.344C24.17,17.104,22,19.895,22,23.129V58c0,11.807,20.7,28,28,28s28-16.193,28-28V23.129 c0-3.234-2.17-6.025-5.277-6.785C69.147,15.468,61.44,14,50,14z"></path><path fill="#1f212b" d="M20.5,59C14.71,59,10,53.393,10,46.5S14.71,34,20.5,34v1c-5.238,0-9.5,5.159-9.5,11.5 S15.262,58,20.5,58V59z"></path><path fill="#1f212b" d="M11.289,49.533l-0.978-0.209C10.329,49.24,12.192,41,20.5,41v1 C12.991,42,11.305,49.458,11.289,49.533z"></path><path fill="#1f212b" d="M20.5,52c-6.76,0-8.943-5.261-8.964-5.314l0.928-0.372C12.542,46.505,14.436,51,20.5,51V52z"></path><path fill="#1f212b" d="M79.5,59v-1c5.238,0,9.5-5.159,9.5-11.5S84.738,35,79.5,35v-1C85.29,34,90,39.607,90,46.5 S85.29,59,79.5,59z"></path><path fill="#1f212b" d="M88.711,49.534C88.645,49.227,86.991,42,79.5,42v-1c8.308,0,10.171,8.24,10.189,8.324L88.711,49.534 z"></path><path fill="#1f212b" d="M79.5,52v-1c6.091,0,8.017-4.639,8.036-4.686l0.929,0.371C88.443,46.739,86.26,52,79.5,52z"></path><path fill="#1f212b" d="M50,62c-2.535,0-3.501-1.306-3.832-1.983c-1.321,0.126-2.927,0.922-2.944,0.931 c-0.119,0.059-0.255,0.067-0.382,0.027C42.767,60.949,41,60.339,41,58.5c0-1.633,1.04-3.211,1.084-3.277 c0.153-0.229,0.463-0.291,0.693-0.139c0.229,0.152,0.292,0.463,0.14,0.692C42.907,55.791,42,57.174,42,58.5 c0,0.858,0.664,1.292,0.988,1.452C43.563,59.688,45.18,59,46.5,59c0.229,0,0.429,0.156,0.485,0.379C47.002,59.439,47.458,61,50,61 s2.998-1.561,3.016-1.627C53.076,59.156,53.275,59,53.5,59c1.32,0,2.938,0.688,3.512,0.952C57.335,59.793,58,59.359,58,58.5 c0-1.333-0.907-2.709-0.916-2.723c-0.153-0.229-0.091-0.54,0.139-0.693c0.229-0.153,0.54-0.092,0.693,0.139 C57.96,55.289,59,56.867,59,58.5c0,1.839-1.767,2.449-1.842,2.475c-0.126,0.04-0.264,0.031-0.382-0.027 c-0.017-0.009-1.626-0.805-2.944-0.931C53.501,60.694,52.535,62,50,62z"></path><path fill="#1f212b" d="M33,60c-5.823,0-6.974-4.335-6.985-4.379c-0.067-0.268,0.096-0.539,0.364-0.606 c0.267-0.063,0.538,0.096,0.605,0.362l0,0C27.023,55.524,27.982,59,33,59c6.609,0,8.979-3.612,9.077-3.767 c0.147-0.232,0.456-0.304,0.689-0.155c0.233,0.146,0.304,0.453,0.158,0.687C42.816,55.938,40.194,60,33,60z"></path><path fill="#1f212b" d="M67,60c-7.194,0-9.816-4.063-9.924-4.235c-0.146-0.233-0.075-0.54,0.158-0.687 c0.234-0.148,0.542-0.077,0.689,0.155C58.021,55.388,60.391,59,67,59c5.018,0,5.977-3.476,6.016-3.623 c0.068-0.268,0.34-0.433,0.607-0.36c0.267,0.068,0.429,0.338,0.362,0.604C73.974,55.665,72.823,60,67,60z"></path><path fill="#1f212b" d="M30.5,53c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5S32.43,53,30.5,53z M30.5,47 c-1.378,0-2.5,1.121-2.5,2.5s1.122,2.5,2.5,2.5s2.5-1.121,2.5-2.5S31.878,47,30.5,47z"></path><path fill="#1f212b" d="M69.5,53c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5S71.43,53,69.5,53z M69.5,47 c-1.378,0-2.5,1.121-2.5,2.5s1.122,2.5,2.5,2.5s2.5-1.121,2.5-2.5S70.878,47,69.5,47z"></path><path fill="#1f212b" d="M46.5,59.5c-1.5,0-3.5,1-3.5,1V61h4.798C46.731,60.408,46.5,59.5,46.5,59.5z"></path><path fill="#1f212b" d="M52.202,61H57v-0.5c0,0-2-1-3.5-1C53.5,59.5,53.269,60.408,52.202,61z"></path><path fill="#1f212b" d="M50,87c-0.077,0-0.153-0.018-0.224-0.053C46.862,85.491,47,83,47,81.271c0-0.261,0-2.102,0-2.283 c0-1.488-0.256-4.596-0.834-5.117c-0.154-0.138-0.207-0.357-0.132-0.551C46.107,73.128,46.293,73,46.5,73h7 c0.207,0,0.393,0.128,0.467,0.32c0.074,0.193,0.021,0.413-0.132,0.551C53.256,74.393,53,77.5,53,78.988c0,0.181,0,2.022,0,2.283 c0,1.729,0.138,4.22-2.776,5.676C50.153,86.982,50.077,87,50,87z"></path><path fill="#1f212b" d="M72.91,29.231c0,0-0.175-0.281-0.27-0.412c-1.947-2.705-4.756-3.814-7.134-3.814 c-5.506,0-10.825,4.027-10.825,4.027c-1.681,1.454-0.05,4.118,2.681,2.422C61.848,28.582,64,27,67,27 c2.56,0,3.91,1.797,5.146,2.854c0.195,0.195,0.512,0.195,0.707,0C73.024,29.683,73.036,29.425,72.91,29.231z"></path><path fill="#1f212b" d="M27.089,29.231c0,0,0.175-0.281,0.27-0.412c1.947-2.705,4.756-3.814,7.134-3.814 c5.506,0,10.826,4.027,10.826,4.027c1.681,1.454,0.05,4.118-2.681,2.422C38.152,28.582,35.999,27,32.999,27 c-2.56,0-3.91,1.797-5.146,2.854c-0.195,0.195-0.512,0.195-0.707,0C26.975,29.683,26.963,29.425,27.089,29.231z"></path><path fill="#1f212b" d="M69,59.5l-3.512,3.863C64.54,64.406,63.197,65,61.788,65H56.65c-0.395,0-0.753-0.233-0.914-0.594 l-2.179-4.902c-0.019,0-0.039-0.004-0.057-0.004c0,0-0.5,2-3.5,2s-3.5-2-3.5-2c-0.019,0-0.039,0.004-0.057,0.004l-2.179,4.902 C44.103,64.767,43.745,65,43.35,65h-5.138c-1.409,0-2.752-0.594-3.7-1.637L31,59.5l-2.456-0.65l4.956,7.292 c0.853,1.208,2.196,1.978,3.67,2.1l9.054,0.755c0.38,0.031,0.745-0.155,0.941-0.482L50,64l2.835,4.514 c0.196,0.327,0.561,0.514,0.941,0.482l9.054-0.755c1.474-0.123,2.818-0.892,3.67-2.1l4.956-7.292L69,59.5z"></path><path fill="#1f212b" d="M37.5,42c-4.754,0-6.38-3.143-6.447-3.276c-0.105-0.211-0.049-0.467,0.135-0.614 C31.295,38.023,33.861,36,37,36c4.736,0,6.847,3.599,6.934,3.752c0.125,0.219,0.068,0.497-0.134,0.648 C43.713,40.465,41.619,42,37.5,42z"></path><path fill="#1f212b" d="M56.2,40.4c-0.202-0.151-0.259-0.43-0.134-0.648C56.153,39.599,58.264,36,63,36 c3.139,0,5.705,2.023,5.813,2.109c0.184,0.147,0.24,0.403,0.135,0.614C68.88,38.857,67.254,42,62.5,42 C58.381,42,56.287,40.465,56.2,40.4z"></path></g></svg>
+              <!-- FREDDY KRUGGER -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 0 100 100"
+                style=" fill:#000000;"><path d="M52,100c-13.812,0-21.844-14.654-23.313-17.592 C28.031,81.097,28.604,78.791,28,76c-4.927-2.965-6.035-12.803-7-17c-5.487-2.444-15.904-3.297-15.904-11.909 c0-7.474,6.52-12.377,18.045-13.734C26.203,23.546,35.364,6,44.5,6c3.329,0,5.845,0.385,7.5,0.757C53.655,6.385,56.171,6,59.5,6 c9.136,0,18.297,17.546,21.359,27.356c11.525,1.357,18.045,6.261,18.045,13.734c0,8.612-8.124,13.687-13.611,16.131 c-0.965,4.197-3.158,10.049-8.085,13.014c-0.604,2.791-1.239,4.861-1.894,6.171C73.844,85.346,65.812,100,52,100z" opacity=".35"></path><path fill="#f2f2f2" d="M50,98c-13.812,0-21.844-14.654-23.313-17.592c-0.655-1.312-1.29-3.382-1.895-6.173 c-4.927-2.965-7.121-8.816-8.085-13.014C11.22,58.777,3.096,53.703,3.096,45.091c0-7.474,6.52-12.377,18.045-13.734 C24.203,21.546,33.364,4,42.5,4c3.329,0,5.845,0.385,7.5,0.757C51.655,4.385,54.171,4,57.5,4c9.136,0,18.297,17.546,21.359,27.356 c11.525,1.357,18.045,6.261,18.045,13.734c0,8.612-8.124,13.687-13.611,16.131c-0.965,4.197-3.158,10.049-8.085,13.014 c-0.604,2.791-1.239,4.861-1.894,6.171C71.844,83.346,63.812,98,50,98z"></path><path fill="#ff7575" d="M50,91.5c10,0,16.5-12,17.5-14s2-8,2-8c7-1,8-13,8-13s12.904-4,12.904-11.409S73.5,37.5,73.5,37.5 c0-7-11-27-16-27s-7.5,1-7.5,1s-2.5-1-7.5-1s-16,20-16,27c0,0-16.904,0.181-16.904,7.591S22.5,56.5,22.5,56.5s1,12,8,13 c0,0,1,6,2,8S40,91.5,50,91.5z"></path><path fill="#40396e" d="M27.225,42.258l1.079,11.466c0,0-0.845-1.447-2.453-1.447c-2.562,0-1.818,4.429-1.818,4.429 L12.191,50l-2.09-4.91l2.022-4.079l12.067-0.506l3.438,0.506L27.225,42.258z"></path><path fill="#40396e" d="M72.775,42.258l-1.079,11.466c0,0,0.845-1.447,2.453-1.447c2.562,0,1.818,4.429,1.818,4.429 L87.808,50l2.09-4.91l-2.022-4.079l-12.067-0.506l-3.438,0.506L72.775,42.258z"></path><path fill="#707cc0" d="M79.742,38.551L67.27,37.944l-17.461-3.978L33.09,38.079l-12.907,0.019l-9.61,4.189v2.196 c0,0,2.928-3.472,12.067-1.517c5.569,1.191,15.573,5.09,27.169,5.09c10.787,0,21.616-3.822,27.169-5.09 c8.562-1.955,12.27,1.146,12.27,1.146v-1.18L79.742,38.551z"></path><path fill="#9aa2e6" d="M24.663,39.022c0,0,9.848,0.809,25.337,0.809c14.371,0,24.955-0.809,24.955-0.809L63.36,14.551 L56.753,10.5l-9.371,0.41l-5.721-0.239l-9.11,9.678l-6.27,13.888L24.663,39.022z"></path><path fill="none" stroke="#40396e" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" stroke-width="3" d="M50,91.5c10,0,16.5-12,17.5-14s2-8,2-8c7-1,8-13,8-13s12.904-4,12.904-11.409S73.5,37.5,73.5,37.5c0-7-11-27-16-27s-7.5,1-7.5,1 s-2.5-1-7.5-1s-16,20-16,27c0,0-16.904,0.181-16.904,7.591S22.5,56.5,22.5,56.5s1,12,8,13c0,0,1,6,2,8S40,91.5,50,91.5z"></path><path fill="#40396e" d="M50.03,70.949c-0.006,0-0.012,0-0.018,0c-1.746,0-3.201-0.987-4.369-2.935 c-0.69-1.149-1.321-1.06-1.391-1.048c-0.268,0.085-0.539,0.044-0.782-0.1s-0.392-0.389-0.449-0.664 c-0.057-0.273-0.52-2.715,0.67-4.177C44.073,61.559,44.783,61,46,61c1.672,0,2.941,2.647,2.447,2.895c0,0-1.634-0.895-2.447-0.895 c-0.462,0-0.646,0.153-0.756,0.287c-0.311,0.38-0.376,1.113-0.351,1.729c0.778,0.164,1.703,0.698,2.465,1.969 c1.179,1.966,2.219,1.962,2.613,1.964c0.001,0,0.003,0,0.004,0c0.931,0,1.772-0.66,2.554-1.964 c0.763-1.271,1.687-1.805,2.465-1.969c0.025-0.616-0.04-1.349-0.351-1.729C54.533,63.153,54.349,63,53.887,63 c-0.813,0-2.47,0.859-2.47,0.859C50.945,63.602,52.215,61,53.887,61c1.217,0,1.927,0.559,2.309,1.026 c1.19,1.462,0.727,3.903,0.67,4.177c-0.057,0.275-0.228,0.515-0.471,0.658c-0.242,0.144-0.534,0.178-0.804,0.094 c-0.025-0.001-0.658-0.088-1.347,1.06C53.076,69.962,51.658,70.949,50.03,70.949z" opacity=".35"></path><path fill="#fcfcfc" d="M36,54.032c0,0,4.224-2.575,10,0.409C46,54.441,41.259,58.207,36,54.032z"></path><path fill="#40396e" d="M43,54c0-0.254-0.052-0.495-0.138-0.718c-1.38-0.311-2.601-0.326-3.622-0.212 C39.092,53.349,39,53.662,39,54c0,1.039,0.796,1.883,1.809,1.981c0.105,0.006,0.207,0.006,0.31,0.007 C42.167,55.925,43,55.064,43,54z"></path><path fill="#fcfcfc" d="M63.999,54.032c0,0-4.224-2.575-10,0.409C53.999,54.441,58.741,58.207,63.999,54.032z"></path><path fill="#40396e" d="M56.999,54c0-0.254,0.052-0.495,0.138-0.718c1.38-0.311,2.601-0.326,3.622-0.212 c0.148,0.279,0.239,0.592,0.239,0.93c0,1.039-0.796,1.883-1.809,1.981c-0.105,0.006-0.207,0.006-0.31,0.007 C57.832,55.925,56.999,55.064,56.999,54z"></path><path fill="#40396e" d="M71.695,53.725C72.458,57.929,70.361,62.46,67,65 C68.023,60.912,69.686,57.484,71.695,53.725L71.695,53.725z" opacity=".35"></path><g opacity=".35"><path fill="#40396e" d="M36,47.803c0.313,0.526,0.971,0.575,1.503,0.751c3.49,0.94,7.404,1.727,9.947,4.553 C47.858,53.616,48.217,54.362,48,55c-0.53-1.124-1.716-1.375-2.751-1.833C43.23,52.319,36.089,50.264,36,47.803L36,47.803z"></path><path fill="#40396e" d="M33,57c0.908,1.527,1.981,2.799,3.793,2.506c1.816-0.186,3.452-0.704,5.365-1.006 C39.93,62.539,32.361,62.786,33,57L33,57z"></path><path fill="#40396e" d="M39.5,64.5c-1.999,2.339-3.109,3.911-4.5,6.5C33.343,68.112,36.21,64.017,39.5,64.5L39.5,64.5z"></path><path fill="#40396e" d="M28.304,53.725C30.313,57.483,31.977,60.912,33,65C29.639,62.46,27.541,57.929,28.304,53.725 L28.304,53.725z"></path><path fill="#40396e" d="M42.663,68.483c-2.251,3.478-3.362,7.066-4.584,10.989C36.366,75.465,38.38,69.865,42.663,68.483 L42.663,68.483z"></path><path fill="#40396e" d="M63.999,47.803c-0.081,2.453-7.23,4.517-9.249,5.363c-1.036,0.459-2.22,0.709-2.751,1.833 c-0.385-2.51,3.461-4.137,5.325-4.92c1.963-0.797,4.013-1.152,6.005-1.779C63.584,48.188,63.865,48.097,63.999,47.803 L63.999,47.803z"></path><path fill="#40396e" d="M66.999,57c0.638,5.789-6.933,5.536-9.157,1.5c1.912,0.302,3.549,0.82,5.365,1.006 C65.019,59.799,66.092,58.528,66.999,57L66.999,57z"></path><path fill="#40396e" d="M60.499,64.5c3.29-0.483,6.157,3.612,4.5,6.5C63.608,68.411,62.499,66.84,60.499,64.5L60.499,64.5z"></path><path fill="#40396e" d="M57.337,68.483c4.283,1.382,6.297,6.981,4.584,10.989C60.699,75.55,59.587,71.961,57.337,68.483 L57.337,68.483z"></path><path fill="#40396e" d="M46,81.494c1.264-3.164,6.589-3.332,7.736,0C50.593,80.787,49.156,81,46,81.494L46,81.494z"></path></g><path fill="#40396e" d="M58,77c-1.942-0.955-3.786-1.787-5.845-1.604c-0.906-0.027-1.725,0.828-2.602,0.498 C47.026,74.683,44.438,75.797,42,77c0.38-0.668,0.911-1.226,1.488-1.744c1.841-1.646,4.672-2.318,6.959-1.15c0,0-0.894,0-0.894,0 C52.591,72.566,56.346,74.233,58,77L58,77z" opacity=".35"></path></svg>
+              <!-- LOBO -->
+              <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                width="50" height="50"
+                viewBox="0 2 48 48"
+                style=" fill:#000000;"><path fill="#283593" d="M26,47c0,0-2.417-6.667-1-9L10,27.129C8.25,32.295,1,35,1,35c3.511,2.82,6.94,2.222,8.727,1.582c-0.025,0.063-0.062,0.123-0.086,0.186c-0.368,0.976-0.61,1.959-0.721,2.871c-0.117,0.907-0.107,1.74-0.053,2.357c0.008,0.295,0.066,0.564,0.083,0.731C8.982,42.905,9,43,9,43s0.096-0.014,0.275-0.041c0.163-0.038,0.437-0.07,0.718-0.158c0.601-0.149,1.392-0.41,2.212-0.815c0.826-0.401,1.678-0.949,2.482-1.614c0.101-0.084,0.19-0.187,0.288-0.275c-0.013,0.627,0.005,1.241,0.088,1.809c0.12,0.864,0.342,1.632,0.552,2.192c0.083,0.271,0.208,0.508,0.267,0.659C15.959,44.916,16,45,16,45s0.088-0.033,0.253-0.094c0.147-0.069,0.401-0.154,0.648-0.293c0.538-0.261,1.229-0.664,1.911-1.207c0.522-0.409,1.026-0.92,1.505-1.473C20.844,43.707,22.246,46.177,26,47z"></path><path fill="#3f51b5" d="M36.657 26.221c-.056.016-.128.052-.153.046-.034.001-.047-.004-.08.003-.085.023-.133.036-.133.036l1.084 1.681c0 0 .031-.039.086-.108.044-.05.098-.111.159-.18.068-.076.092-.13.146-.206.185-.286.377-.652.559-1.02C38.687 25.738 39 25 39 25s-.693.412-1.394.778C37.257 25.96 36.904 26.13 36.657 26.221zM33.8 25.096c-.053.014-.117.043-.138.032-.033 0-.038-.009-.078.001-.08.019-.125.03-.125.03l1.082 1.682c0 0 .029-.037.079-.103.04-.047.089-.103.145-.168.067-.074.093-.129.141-.2.173-.274.346-.623.507-.972C35.732 24.7 36 24 36 24s-.652.38-1.311.708C34.361 24.872 34.029 25.021 33.8 25.096zM43.813 21.308L39.248 18.832 38 23 40.977 20.767 40 25zM36 21L39.248 18.832 36.752 17.168zM28 41c0 0-3.25-4-1-7 1.97-2.627-4.878-6.661-4.922-6.792C22.027 27.072 11 22.129 11 22.129c-1.75 5.167-8 6.926-8 6.926 3.917 2.546 6.329 2.123 7.66 1.343-.342.88-.563 1.77-.676 2.586-.117.82-.122 1.568-.085 2.12.002.264.049.504.061.653C9.986 35.915 10 36 10 36s.084-.017.242-.048c.144-.041.384-.081.633-.172.53-.159 1.228-.427 1.954-.826.73-.396 1.492-.92 2.2-1.557.336-.301.661-.63.971-.975-.205.522-.381 1.052-.474 1.595-.155.801-.19 1.604-.136 2.334.063.734.196 1.387.337 1.868.052.231.153.443.196.574C15.973 38.928 16 39 16 39s.074-.022.212-.062c.13-.045.361-.091.577-.188.469-.175 1.072-.46 1.697-.851.616-.395 1.238-.905 1.786-1.509.27-.286.515-.599.742-.928C21.322 36.773 22.661 40.487 28 41z"></path><path fill="#7986cb" d="M45.875,14.042C43.731,12.612,35,12,35,12c-0.078-0.8-0.5-2.417-5-3c-2.825-0.366-5.218-0.339-7.232-0.087C17.466,5.28,11,7.941,11,7.941c0.586,0.81,1.201,1.509,1.831,2.125C8.613,9.696,5,12,5,12c2.262,3.127,5.107,4.39,7.711,4.785C10.658,21.398,5,23,5,23c3.016,1.96,5.138,2.157,6.565,1.79c-0.084,0.283-0.18,0.573-0.242,0.843c-0.217,0.922-0.307,1.757-0.329,2.372c-0.028,0.295-0.005,0.56-0.009,0.726C10.995,28.906,11,29,11,29s0.091-0.023,0.262-0.067c0.157-0.054,0.416-0.111,0.689-0.227c0.579-0.206,1.349-0.543,2.163-1.027c0.818-0.482,1.684-1.108,2.505-1.857c0.045-0.041,0.087-0.091,0.133-0.133c-0.318,0.964-0.554,1.914-0.681,2.777c-0.15,0.985-0.177,1.862-0.153,2.502c-0.005,0.31,0.038,0.581,0.046,0.753C15.988,31.903,16,32,16,32s0.09-0.036,0.26-0.104c0.155-0.076,0.413-0.17,0.681-0.326c0.571-0.29,1.325-0.74,2.113-1.349c0.791-0.607,1.62-1.37,2.395-2.254c-0.019,0.066-0.046,0.134-0.065,0.2c-0.315,1.146-0.499,2.27-0.573,3.274c-0.077,1.002-0.04,1.887,0.03,2.529c0.017,0.312,0.08,0.581,0.102,0.754C20.981,34.904,21,35,21,35s0.088-0.044,0.252-0.126c0.149-0.09,0.401-0.205,0.657-0.383c0.549-0.339,1.27-0.853,2.013-1.531c0.556-0.503,1.127-1.096,1.676-1.759C25.481,33.106,25.939,35.745,29,37c0,0-0.667-5.083,2-7s5,2,5,2l3.697-3.072c0.456-0.456,0.324-1.224-0.26-1.497C36.66,26.133,30,24.854,30,20c3.083-4,7.313-1.25,12,2c0,0,0.438,0,1,0c2.125-0.375,1.357-3.887,2.875-4.958C48,15.542,46.625,14.542,45.875,14.042z"></path><path fill="#9fa8da" d="M45.875,14.042C43.731,12.612,35,12,35,12c-0.078-0.8-0.5-2.417-5-3c-7.004-0.908-11.392,0.58-13.767,1.997C10.762,8.305,5,12,5,12c3.692,5.103,8.937,5.254,12.147,4.74c-0.044,0.097-0.1,0.192-0.142,0.288c-0.407,0.948-0.687,1.904-0.851,2.778c-0.167,0.872-0.215,1.663-0.208,2.247c-0.013,0.28,0.022,0.532,0.026,0.69C15.991,22.911,16,23,16,23s0.088-0.02,0.252-0.058c0.15-0.047,0.4-0.096,0.661-0.199c0.554-0.182,1.288-0.484,2.058-0.925c0.773-0.439,1.587-1.014,2.352-1.706c0.309-0.279,0.604-0.586,0.896-0.898c-0.085,0.19-0.185,0.378-0.262,0.569c-0.403,1.001-0.677,2.003-0.834,2.914c-0.161,0.909-0.2,1.728-0.187,2.33c-0.01,0.289,0.028,0.548,0.034,0.71C20.989,25.908,21,26,21,26s0.089-0.026,0.255-0.073c0.152-0.057,0.405-0.121,0.669-0.242c0.56-0.219,1.302-0.571,2.079-1.069c0.749-0.476,1.533-1.09,2.275-1.808C25.446,18.209,27.339,12.79,43,16c-10.768,1.243-11.625,2.25-13,4c3.083-4,7.313-1.25,12,2c0,0,0.438,0,1,0c2.125-0.375,1.357-3.887,2.875-4.958C48,15.542,46.625,14.542,45.875,14.042z M9,12.647c0.997-0.611,5.239-1.595,7,1.836C16,14.483,11.38,16.555,9,12.647z"></path><path fill="#3f51b5" d="M45.875,14.042c-0.592-0.395-1.702-0.722-2.99-0.991c2.076,1.583,2.99,3.991,2.99,3.991C48,15.542,46.625,14.542,45.875,14.042z"></path><path fill="#283593" d="M27,11c0,0,3.448,2,4,2s1-0.448,1-1s-0.448-1-1-1S27,11,27,11z"></path></svg>   
+          </dt>
+        <div class="col-sm-6">
+          <form class="row g-3 justify-content-around text-start text-sm-strat text-light needs-validation" novalidate>
+            <div class="col">
+              <div class="offset-lg-1 col-lg-10">
+                <div class="mb-3 position-relative">
+                  <label for="nombre" class="form-label"><h5>Nombre</h5></label>
+                  <input id="nombre" class="form-control" type="text" placeholder="Escriba su nombre..." required>
+                  <div class="valid-tooltip">
+                    Campo completado
+                  </div>
+                  <div class="invalid-tooltip">
+                    Es necesario el nombre
+                  </div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <label for="email" class="form-label"><h5>Email</h5></label>
+                  <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
+                  <div class="valid-tooltip">
+                    Campo completado
+                  </div>
+                  <div class="invalid-tooltip">
+                    Es necesario el email
+                  </div>
+                </div>
+                <div class="mb-3 position-relative">
+                  <label for="comentario" class="form-label"><h5>Comentario:</h5></label>
+                  <textarea class="form-control" id="comentario" rows="3" placeholder="Escriba un comentario..." required></textarea>
+                  <div class="valid-tooltip">
+                    Campo completado
+                  </div>
+                  <div class="invalid-tooltip">
+                    Es necesario poner su mensaje
+                  </div>
+                </div>
+                <div class="d-grid gap-2 col-autof mx-auto">
+                  <button type="submit" class="btn btn-info text-light rounded-pill fw-bolder">Enviar</button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    <br>
+
+
+    <script>
+      // Example starter JavaScript for disabling form submissions if there are invalid fields
+      (() => {
+        'use strict'
+
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        const forms = document.querySelectorAll('.needs-validation')
+
+        // Loop over them and prevent submission
+        Array.from(forms).forEach(form => {
+          form.addEventListener('submit', event => {
+            if (!form.checkValidity()) {
+              event.preventDefault()
+              event.stopPropagation()
+            }
+
+            form.classList.add('was-validated')
+          }, false)
+        })
+      })()
+    </script>
+
+    <p style="height: 100px;"></p>
   </body>
 </html>

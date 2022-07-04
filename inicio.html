@@ -8,8 +8,6 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <!-- iconos -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
     <style>
       body {
         background-image: linear-gradient(to right, DarkOrchid,RebeccaPurple, DarkSlateBlue,SlateBlue, DarkOrchid, SlateBlue, DarkSlateBlue,RebeccaPurple,Indigo);
@@ -18,7 +16,7 @@
         margin:10px;
       }
     </style>
-    <title>Portafolio Web</title>
+    <title>Protafolio Web</title>
   </head>
   <body>
     <!-- Barra de Navegación -->
@@ -33,20 +31,21 @@
       <div id="Menu" class="collapse navbar-collapse justify-content-between">
         <a></a>
         <ul class="navbar-nav ms-100">
-          <li class="nav-item"><a class="nav-link text-light" href="#">PERFIL</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#">HABILIDADES</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#perfil">PERFIL</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#experiencia">EXPERIENCIA</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#habilidades">HABILIDADES</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" href="#" id="menuDesl" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               CURSOS
             </a>
             <ul class="dropdown-menu text-center text-sm-start" aria-labelledby="navbarDropdownMenuLink" style="background-color:#3f4145;">
-              <li><a class="dropdown-item text-light" href="#">Html5</a></li>
-              <li><a class="dropdown-item text-light" href="#">Css3</a></li>
-              <li><a class="dropdown-item text-light" href="#">jS</a></li>
+              <li><a class="dropdown-item text-light" href="#html5">Html5</a></li>
+              <li><a class="dropdown-item text-light" href="#css3">Css3</a></li>
+              <li><a class="dropdown-item text-light" href="#js">jS</a></li>
+              <li><a class="dropdown-item text-light" href="#bootstrap">Bootstrap</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link text-light" href="#">CONTACTO</a></li>
+          <li class="nav-item"><a class="nav-link text-light" href="#contacto">CONTACTO</a></li>
         </ul>
       </div>
     </nav>
@@ -58,7 +57,7 @@
       <div class="container">
         <div class="row">
           <dt class="col-sm-6">
-            <h1 class="text-center text-sm-start text-light ">
+            <h1 class="text-center text-sm-start text-light" id="perfil">
               Hola, soy <br> Anderson Arroba
             </h1>
             <p class="text-center text-sm-start">
@@ -84,7 +83,7 @@
     <section>
       <div class="container">
         <div class="row">
-          <div class="text-center text-light" >
+          <div class="text-center text-light" id="experiencia" >
             <h2>
               EXPERIENCIA
             </h2>
@@ -173,34 +172,31 @@
     <section style="background-color: darkslateblue;">
       <br>
       <br>
-      <figure class="text-center text-light">
+      <figure class="text-center text-light" id="habilidades">
         <blockquote>
           <h2>HABILIDADES</h2>
         </blockquote>
         <figcaption>
           <div>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">CSS</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">HTML</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">HTML</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">JavaScript</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">TypeScript</a>
-            <br><br>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">react.ja</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Node.js</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Express</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Python</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Django</a>
-            <br><br>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Vbnet</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Csharp</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Vfox</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Mysql</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Postgress</a>
-            <br><br>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">MongoDB</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Firebase</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Sql Server</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder" role="button" data-bs-toggle="button">Genexus</a>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">CSS</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">HTML</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">HTML</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">JavaScript</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">TypeScript</a>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">react.ja</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Node.js</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Express</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Python</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Django</a>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Vbnet</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Csharp</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Vfox</a>
+            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Mysql</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Postgress</a>
+            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">MongoDB</a>
+            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Firebase</a>
+            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Sql Server</a>
+            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Genexus</a>
   
           </div>
         </figcaption>
@@ -222,7 +218,7 @@
         <!-- HTML5 -->
         <dt class="col-sm-6">
           <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13">HTML5</h3>
+            <h3 class="text-center text-light mb-0 col-13" id="html5">HTML5</h3>
             <figure class="container justify-content-center figure ">
               <p class="text-center">
                 <img src="static/img/html5.png" alt="HTML5" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
@@ -238,7 +234,7 @@
         <!-- CSS3 -->
         <dt class="col-sm-6">
           <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13">CSS3</h3>
+            <h3 class="text-center text-light mb-0 col-13" id="css3">CSS3</h3>
             <figure class="figure">
               <p class="text-center">
                 <img src="static/img/css.png" alt="CSS3" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
@@ -255,7 +251,7 @@
         <!-- JAVASCRIPT -->
         <dt class="col-sm-6">
           <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13">JavaScript</h3>
+            <h3 class="text-center text-light mb-0 col-13" id="js">JavaScript</h3>
             <figure class="figure">
               <p class="text-center">
                 <img src="static/img/js.png" alt="JavaScript" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
@@ -272,7 +268,7 @@
         <!-- BOOTSTRAP -->
         <dt class="col-sm-6">
           <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13">Bootstrap 5</h3>
+            <h3 class="text-center text-light mb-0 col-13" ip="bootstrap">Bootstrap 5</h3>
             <figure class="figure">
               <p class="text-center">
                 <img src="static/img/B.png" alt="Bootstrap 5" class="img-fluid figure-img alicenter" width="285" height="auto" vspace=15>
@@ -294,7 +290,7 @@
       <div class="container col">
         <div class="row">
           <dt class="col-sm-6  text-light">
-            <h4 class="text-strat fw-bolder">
+            <h4 class="text-strat fw-bolder" id="contacto">
               Contacto
             </h4>
             <p class="text-sm-start">
@@ -376,14 +372,16 @@
                   </div>
                 </div>
                 <div class="d-grid gap-2 col-autof mx-auto">
-                  <button type="submit" class="btn btn-info text-light rounded-pill fw-bolder">Enviar</button>
+                  <button href="agradecimiento.html" type="submit" class="btn btn-info text-light rounded-pill fw-bolder">Enviar</button>
                 </div>
               </div>
             </div>
           </form>
         </div>
       </div>
-    <br>
+      <br>
+    </section>
+
 
 
     <script>

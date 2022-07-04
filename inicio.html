@@ -13,7 +13,6 @@
         background-image: linear-gradient(to right, DarkOrchid,RebeccaPurple, DarkSlateBlue,SlateBlue, DarkOrchid, SlateBlue, DarkSlateBlue,RebeccaPurple,Indigo);
         font-family: 'Courier New', Courier, monospace;
         padding-top:90px;
-        margin:10px;
       }
     </style>
     <title>Protafolio Web</title>
@@ -21,43 +20,35 @@
   <body>
     <!-- Barra de Navegación -->
     <nav class="text-center text-sm-start container-fluid navbar navbar-expand-sm bg-dark navbar-dark border-3 border-bottom border-danger fixed-top ">
-      <a href="#" class="navbar-brand text-light">
-        <img class="rounded-pill" src="static/img/perfil.jpg" alt="Foto del creador" width="60" height="60" ALIGN="LEFT" hspace=10 vspace=-10>
-        Anderson Arroba <br> {Estudiante}
-      </a>
-      <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
-        <span class="navbar-toggler-icon"> </span>
-      </button>
-      <div id="Menu" class="collapse navbar-collapse justify-content-between">
-        <a></a>
-        <ul class="navbar-nav ms-100">
-          <li class="nav-item"><a class="nav-link text-light" href="#perfil">PERFIL</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#experiencia">EXPERIENCIA</a></li>
-          <li class="nav-item"><a class="nav-link text-light" href="#habilidades">HABILIDADES</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-light" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              CURSOS
-            </a>
-            <ul class="dropdown-menu text-center text-sm-start" aria-labelledby="navbarDropdownMenuLink" style="background-color:#3f4145;">
-              <li><a class="dropdown-item text-light" href="#html5">Html5</a></li>
-              <li><a class="dropdown-item text-light" href="#css3">Css3</a></li>
-              <li><a class="dropdown-item text-light" href="#js">jS</a></li>
-              <li><a class="dropdown-item text-light" href="#bootstrap">Bootstrap</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link text-light" href="#contacto">CONTACTO</a></li>
-        </ul>
+      <div class="container-fluid">
+        <a href="#" class="navbar-brand text-light">
+          <img class="rounded-pill" src="static/img/perfil.jpg" alt="Foto del creador" width="60" height="60" ALIGN="LEFT" hspace=10 vspace=-10>
+          Anderson Arroba <br> {Estudiante}
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#Menu">
+          <span class="navbar-toggler-icon"> </span>
+        </button>
+        <div id="Menu" class="collapse navbar-collapse justify-content-between">
+          <a></a>
+          <ul class="navbar-nav ms-100">
+            <li class="nav-item"><a class="nav-link text-light" href="#perfil">PERFIL</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#experiencia">EXPERIENCIA</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#habilidades">HABILIDADES</a></li>
+            <li class="nav-item"><a class="nav-link text-light" href="#cursos">CURSOS</a></li>  
+            <li class="nav-item"><a class="nav-link text-light" href="#contacto">CONTACTO</a></li>
+          </ul>
+        </div>
       </div>
     </nav>
 
     <!-- PERFIL -->
-    <section style="background-color: darkslateblue;">
+    <section style="background-color: darkslateblue;" id="perfil">
       <br>
       <br>
       <div class="container">
         <div class="row">
           <dt class="col-sm-6">
-            <h1 class="text-center text-sm-start text-light" id="perfil">
+            <h1 class="text-center text-sm-start text-light">
               Hola, soy <br> Anderson Arroba
             </h1>
             <p class="text-center text-sm-start">
@@ -80,10 +71,10 @@
     <br>
 
     <!-- EXPERIENCIA -->
-    <section>
+    <section id="experiencia" >
       <div class="container">
         <div class="row">
-          <div class="text-center text-light" id="experiencia" >
+          <div class="text-center text-light">
             <h2>
               EXPERIENCIA
             </h2>
@@ -168,37 +159,34 @@
     </section>
     <br>
     <br>
+
     <!-- HABILIDADES -->
-    <section style="background-color: darkslateblue;">
+    <section style="background-color: darkslateblue;" id="habilidades">
       <br>
       <br>
-      <figure class="text-center text-light" id="habilidades">
+      <figure class="text-center text-light">
         <blockquote>
           <h2>HABILIDADES</h2>
         </blockquote>
         <figcaption>
-          <div>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">CSS</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">HTML</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">HTML</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">JavaScript</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">TypeScript</a>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">react.ja</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Node.js</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Express</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Python</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Django</a>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Vbnet</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Csharp</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Vfox</a>
-            <a href="#" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Mysql</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Postgress</a>
-            <a href="#" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">MongoDB</a>
-            <a href="#" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Firebase</a>
-            <a href="#" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Sql Server</a>
-            <a href="#" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" role="button" data-bs-toggle="button">Genexus</a>
-  
-          </div>
+          <dt class="offset-lg-4 col-lg-4 col-sm-5 text-light text-center">
+            <div class="">
+              <a href="https://www.w3schools.com/css/" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" type="button">CSS</a>
+              <a href="https://www.w3schools.com/html/default.asp" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" type="button">HTML</a>
+              <a href="https://www.w3schools.com/js/default.asp" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" type="button">JavaScript</a>
+              <a href="https://www.typescriptlang.org" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" type="button">TypeScript</a>
+              <a href="https://nodejs.org/es/about/resources/" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" type="button">Node.js</a>
+              <a href="https://www.w3schools.com/python/default.asp" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" type="button">Python</a>
+              <a href="https://docs.djangoproject.com/en/4.0/" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" type="button">Django</a>
+              <a href="https://cursosenlinea.tic.unam.mx/sl/Temarios/Lenguaje_de_programacion_VISUAL_BASIC_.NET.html" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" type="button">Vbnet</a>
+              <a href="https://docs.microsoft.com/es-es/dotnet/csharp/tour-of-csharp/" class="btn btn-outline-success text-light rounded-pill fw-bolder m-1" type="button">Csharp</a>
+              <a href="https://www.scriptcase.net/?gclid=CjwKCAjw_ISWBhBkEiwAdqxb9pvTPIoywM6pfcsLR8ULHaAsn8tB0-ZUM6CHU55RHsFhOp_YHZTQsxoC_XcQAvD_BwE" class="btn btn-outline-warning text-light rounded-pill fw-bolder m-1" type="button">Mysql</a>
+              <a href="https://www.postgresql.org" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" type="button">Postgress</a>
+              <a href="https://www.mongodb.com/es" class="btn btn-outline-primary text-light rounded-pill fw-bolder m-1" type="button">MongoDB</a>
+              <a href="https://www.w3schools.com/sql/default.asp" class="btn btn-outline-danger text-light rounded-pill fw-bolder m-1" type="button">Sql Server</a>
+              <a href="https://www.genexus.com/es/" class="btn btn-outline-info text-light rounded-pill fw-bolder m-1" type="button">Genexus</a>
+            </div>
+          </dt>
         </figcaption>
       </figure>
       <br>
@@ -206,91 +194,95 @@
     </section>
     <br>
     <br>
+
     <!-- CURSOS -->
-    <figure class="text-center text-light">
-      <blockquote>
-        <h2>CURSOS</h2>
-      </blockquote>
-    </figure>
-    <div class="container">
-      <div class="row">
+    <section>
+      <figure class="text-center text-light" id="cursos">
+        <blockquote>
+          <h2>CURSOS</h2>
+        </blockquote>
+      </figure>
+      <div class="container">
+        <div class="row">
 
-        <!-- HTML5 -->
-        <dt class="col-sm-6">
-          <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13" id="html5">HTML5</h3>
-            <figure class="container justify-content-center figure ">
-              <p class="text-center">
-                <img src="static/img/html5.png" alt="HTML5" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
-              </p>
-              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
-                El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.
-                Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
-              </figcaption>
-            </figure>       
-          </article>
-        </dt>
+          <!-- HTML5 -->
+          <dt class="col-sm-6">
+            <article class="mb-3 shadow-lg flex-item">
+              <h3 class="text-center text-light mb-0 col-13">HTML5</h3>
+              <figure class="container justify-content-center figure ">
+                <p class="text-center">
+                  <img src="static/img/html5.png" alt="HTML5" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+                </p>
+                <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
+                  El Lenguaje de Marcado de Hipertexto (HTML) es el código que se utiliza para estructurar y desplegar una página web y sus contenidos.
+                  Por ejemplo, sus contenidos podrían ser párrafos, una lista con viñetas, o imágenes y tablas de datos.
+                </figcaption>
+              </figure>       
+            </article>
+          </dt>
 
-        <!-- CSS3 -->
-        <dt class="col-sm-6">
-          <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13" id="css3">CSS3</h3>
-            <figure class="figure">
-              <p class="text-center">
-                <img src="static/img/css.png" alt="CSS3" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
-              </p>
-              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
-                CSS«hojas de estilo en cascada» (Cascading Style Sheets), básicamente, es un lenguaje que maneja el diseño
-                y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga
-                del contenido básico de las páginas
-              </figcaption>
-            </figure>       
-          </article>
-        </dt>
-        
-        <!-- JAVASCRIPT -->
-        <dt class="col-sm-6">
-          <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13" id="js">JavaScript</h3>
-            <figure class="figure">
-              <p class="text-center">
-                <img src="static/img/js.png" alt="JavaScript" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
-              </p>
-              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
-                JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo,
-                juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo
-                dinámicos, animación, y mucho más).
-              </figcaption>
-            </figure>       
-          </article>
-        </dt>
+          <!-- CSS3 -->
+          <dt class="col-sm-6">
+            <article class="mb-3 shadow-lg flex-item">
+              <h3 class="text-center text-light mb-0 col-13">CSS3</h3>
+              <figure class="figure">
+                <p class="text-center">
+                  <img src="static/img/css.png" alt="CSS3" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+                </p>
+                <figcaption class="container justify-content-center text-center figure-caption text-light col-8 align-items-center">
+                  CSS«hojas de estilo en cascada» (Cascading Style Sheets), básicamente, es un lenguaje que maneja el diseño
+                  y presentación de las páginas web, es decir, cómo lucen cuando un usuario las visita. Funciona junto con el lenguaje HTML que se encarga
+                  del contenido básico de las páginas
+                </figcaption>
+              </figure>       
+            </article>
+          </dt>
+          
+          <!-- JAVASCRIPT -->
+          <dt class="col-sm-6">
+            <article class="mb-3 shadow-lg flex-item">
+              <h3 class="text-center text-light mb-0 col-13">JavaScript</h3>
+              <figure class="figure">
+                <p class="text-center">
+                  <img src="static/img/js.png" alt="JavaScript" class="img-fluid figure-img alicenter" width="200" height="auto" vspace=15>
+                </p>
+                <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
+                  JavaScript es el lenguaje de programación que debes usar para añadir características interactivas a tu sitio web, (por ejemplo,
+                  juegos, eventos que ocurren cuando los botones son presionados o los datos son introducidos en los formularios, efectos de estilo
+                  dinámicos, animación, y mucho más).
+                </figcaption>
+              </figure>       
+            </article>
+          </dt>
 
-        <!-- BOOTSTRAP -->
-        <dt class="col-sm-6">
-          <article class="mb-3 shadow-lg flex-item">
-            <h3 class="text-center text-light mb-0 col-13" ip="bootstrap">Bootstrap 5</h3>
-            <figure class="figure">
-              <p class="text-center">
-                <img src="static/img/B.png" alt="Bootstrap 5" class="img-fluid figure-img alicenter" width="285" height="auto" vspace=15>
-              </p>
-              <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
-                Bootstrap es un framework CSS y Javascript diseñado para la creación de interfaces limpias y con un diseño responsive. Además,
-                ofrece un amplio abanico de herramientas y funciones, de manera que los usuarios pueden crear prácticamente cualquier tipo de
-                sitio web haciendo uso de los mismos.
-              </figcaption>
-            </figure>       
-          </article>
-        </dt>
+          <!-- BOOTSTRAP -->
+          <dt class="col-sm-6">
+            <article class="mb-3 shadow-lg flex-item">
+              <h3 class="text-center text-light mb-0 col-13">Bootstrap 5</h3>
+              <figure class="figure">
+                <p class="text-center">
+                  <img src="static/img/B.png" alt="Bootstrap 5" class="img-fluid figure-img alicenter" width="285" height="auto" vspace=15>
+                </p>
+                <figcaption class="container justify-content-center text-center figure-caption text-light col-8 " ALIGN>
+                  Bootstrap es un framework CSS y Javascript diseñado para la creación de interfaces limpias y con un diseño responsive. Además,
+                  ofrece un amplio abanico de herramientas y funciones, de manera que los usuarios pueden crear prácticamente cualquier tipo de
+                  sitio web haciendo uso de los mismos.
+                </figcaption>
+              </figure>       
+            </article>
+          </dt>
+        </div>
       </div>
-    </div>
+    </section>
+
     <!-- CONTACTO -->
-    <section style="background-color: darkslateblue;">
+    <section style="background-color: darkslateblue;" id="contacto">
       <br>
       <br>
       <div class="container col">
         <div class="row">
           <dt class="col-sm-6  text-light">
-            <h4 class="text-strat fw-bolder" id="contacto">
+            <h4 class="text-strat fw-bolder">
               Contacto
             </h4>
             <p class="text-sm-start">
@@ -371,9 +363,8 @@
                     Es necesario poner su mensaje
                   </div>
                 </div>
-                <div class="d-grid gap-2 col-autof mx-auto">
-                  <button href="inscripcion.html" type="submit" class="btn btn-info text-light rounded-pill fw-bolder">Enviar</button>
-                </div>
+                <a href="inscripcion.html" role="button" class="btn btn-info text-light rounded-2 form-control fw-bolder rounded-pill">Enviar</a>
+
               </div>
             </div>
           </form>
